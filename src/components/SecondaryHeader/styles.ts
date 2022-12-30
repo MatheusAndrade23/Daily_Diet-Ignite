@@ -29,6 +29,11 @@ export const ReturnIcon = styled(ArrowLeft).attrs(({ theme }) => ({
 }))``;
 
 export const ReturnButton = styled(TouchableOpacity)`
+  height: 20px;
+  width: 20px;
   position: absolute;
   left: 24px;
+
+  z-index: 999;
+  elevation: 999;
 `;

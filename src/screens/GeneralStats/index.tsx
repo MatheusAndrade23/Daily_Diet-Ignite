@@ -12,13 +12,21 @@ import {
   InfoView,
 } from "./styles";
 
+import { useNavigation } from "@react-navigation/native";
+
 export const GeneralStats = () => {
+  const { navigate } = useNavigation();
+
+  const handleReturnHome = () => {
+    navigate("home");
+  };
+
   return (
     <Container>
       <Header>
         <StatsTitle>30,21%</StatsTitle>
         <StatsText>das refeições dentro da dieta</StatsText>
-        <ReturnButton>
+        <ReturnButton onPress={handleReturnHome}>
           <ReturnIcon />
         </ReturnButton>
       </Header>
