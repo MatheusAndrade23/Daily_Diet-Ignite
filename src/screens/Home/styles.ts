@@ -1,4 +1,6 @@
 import { SafeAreaView } from "react-native-safe-area-context";
+import { TouchableOpacity } from "react-native";
+
 import styled, { css } from "styled-components/native";
 
 import { ArrowUpRight } from "phosphor-react-native";
@@ -20,7 +22,7 @@ export const StatsCard = styled.View`
   background-color: ${({ theme }) => theme.COLORS.GREEN_LIGHT};
 `;
 
-export const StatsButton = styled.TouchableOpacity`
+export const StatsButton = styled(TouchableOpacity)`
   position: absolute;
 
   top: 10px;
