@@ -5,7 +5,7 @@ import { ArrowLeft } from "phosphor-react-native";
 
 export const Container = styled.View`
   width: 100%;
-  height: 50px;
+  height: 80px;
   flex-direction: row;
   align-items: center;
 
@@ -30,4 +30,5 @@ export const ReturnIcon = styled(ArrowLeft).attrs(({ theme }) => ({
 
 export const ReturnButton = styled(TouchableOpacity)`
   position: absolute;
+  left: 24px;
 `;
