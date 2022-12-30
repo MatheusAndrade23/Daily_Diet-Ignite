@@ -30,7 +30,7 @@ export const Home = () => {
         <MealsTitle>Refeições</MealsTitle>
         <Button title="Nova Refeição" icon="plus" />
 
-        <MealCard />
+        <MealCard time="20:00" text="X-Burguer" />
       </Meals>
     </Container>
   );
