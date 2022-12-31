@@ -1,12 +1,14 @@
 import { Container, Text, Time, Indicator } from "./styles";
 
+import { TouchableOpacityProps } from "react-native";
+
 import { MealTypeStyleProps } from "./styles";
 
-type MealCardProps = {
+interface MealCardProps extends TouchableOpacityProps {
   text: String;
   time: String;
   type?: MealTypeStyleProps;
-};
+}
 
 export const MealCard = ({
   text,

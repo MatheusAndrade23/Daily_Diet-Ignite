@@ -7,7 +7,7 @@ export type ContainerProps = {
 
 export const Container = styled.View<ContainerProps>`
   width: ${({ width }) => (width === "1x" ? "100%" : "47%")};
-  height: ${({ height }) => (height === "1x" ? "70px" : "140px")};
+  height: ${({ height }) => (height === "1x" ? "65px" : "140px")};
   margin-top: 20px;
 `;
 
@@ -25,4 +25,5 @@ export const TextInput = styled.TextInput`
   border-radius: 6px;
   flex: 1;
   margin-top: 5px;
+  padding: 5px;
 `;
