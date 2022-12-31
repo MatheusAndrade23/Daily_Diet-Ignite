@@ -18,8 +18,6 @@ export const StatsCard = styled.View`
   justify-content: center;
   border-radius: 6px;
   position: relative;
-
-  background-color: ${({ theme }) => theme.COLORS.GREEN_LIGHT};
 `;
 
 export const StatsButton = styled(TouchableOpacity)`
@@ -47,10 +45,31 @@ export const StatsText = styled.Text`
 `;
 
 export const Meals = styled.View`
-  width: 100%;
   margin-top: 40px;
+  flex: 1;
 `;
 
 export const MealsTitle = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_1};
+`;
+
+export const MealGroupTitle = styled.Text`
+  ${({ theme }) => css`
+    font-size: ${theme.FONT_SIZE.LG};
+    font-family: ${theme.FONT_FAMILY.BOLD};
+    color: ${theme.COLORS.GRAY_1};
+  `};
+
+  margin-top: 20px;
+`;
+
+export const EmptyListComponent = styled.Text`
+  ${({ theme }) => css`
+    font-size: ${theme.FONT_SIZE.MD};
+    color: ${theme.COLORS.GRAY_3};
+  `};
+
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
 `;
