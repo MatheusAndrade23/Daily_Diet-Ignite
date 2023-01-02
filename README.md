@@ -24,8 +24,6 @@ _<h3>Editando e removendo refeições 🍱</h3>_
 
 <h2>Tecnologias Utilizadas 🛠</h2>
 
-#### App: `React Native!`
-
 - Expo
 - Typescript
 - AsyncStorage
